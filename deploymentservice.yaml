@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
-  name: spring-boot-k8s-deployment
+  name: spring-boot-k8s-deployment1
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: javatechie/devops-automation # Image that will be used to containers in the cluster
+          image: javatechie/devops-automations # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1 # Kubernetes API version
 kind: Service # Kubernetes resource kind we are creating
 metadata: # Metadata of the resource kind we are creating
-  name: springboot-k8s-svc
+  name: springboot-k8s-svc1
 spec:
   selector:
     app: spring-boot-k8s
