@@ -13,7 +13,7 @@ pipeline{
         stage('Build Docker Image'){
             steps {
                 script {
-                    sh 'docker build -t javatechie/devops-automation1 .'
+                    sh 'docker build -t javatechie/devops-automation .'
                 }
             }
         }
