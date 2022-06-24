@@ -49,7 +49,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>devops-automation</finalName>
+		<finalName>devops-auto</finalName>
 	</build>
 
 </project>
